@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        .glow {
+           text-align: center;
+           margin-top: 20%;
+        }
+        .glow span {
+            width: 500px;
+            height: 200px;
+            border: 2px solid rgb(77, 77, 121);
+            font-size: 50px;
+            padding: 10px;
+            animation-name: example;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes example {
+            0% {
+                box-shadow: 2px 0 5px rgba(0, 0, 0, 1);
+                border: 5px solid rgb(58, 117, 58);
+                background: black;
+                color: #fff;
+            }
+            50% {
+                box-shadow: 2px 0 5px rgb(4, 5, 4);
+                border: 5px solid rgb(58, 117, 58);
+                background: #fff;
+                color: black;
+            }
+            100% {
+                box-shadow: 2px 0 5px rgba(0, 0, 255, 1);
+                border: 5px solid rgb(58, 117, 58);
+                background: black;
+                color: #fff;
+            }
+        }
+        
+        }
+    </style>
+</head>
+<body>
+    <div class="glow">
+        <span>I</span>
+        <span>L</span>
+        <span>Y</span>
+        <span>A</span>
+        <span>S</span>
+    </div>
+</body>
+</html>
